@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9FBA1830460213D08D5663B /* ThinkPadTabletEnabler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9FBA1810460213D08D5663B /* ThinkPadTabletEnabler.cpp */; };
+		B9FBA1840460213D08D5663B /* ThinkPadTabletEnabler.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FBA1820460213D08D5663B /* ThinkPadTabletEnabler.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBundleTarget section */
+		B9FBA17F04601FF708D5663B /* ThinkPadTabletEnabler */ = {
+			isa = PBXBundleTarget;
+			buildConfigurationList = 58F193E60A8D01D70073F8A1 /* Build configuration list for PBXBundleTarget "ThinkPadTabletEnabler" */;
+			buildPhases = (
+				B9FBA17904601FF708D5663B /* ShellScript */,
+				B9FBA17A04601FF708D5663B /* Headers */,
+				B9FBA17B04601FF708D5663B /* Sources */,
+				B9FBA17C04601FF708D5663B /* Resources */,
+				B9FBA17D04601FF708D5663B /* Frameworks */,
+				B9FBA17E04601FF708D5663B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = ThinkPadTabletEnabler;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions/ThinkPadTabletEnabler.kext/Contents/PlugIns";
+			productName = ThinkPadTabletEnabler;
+			productReference = B9FBA18004601FF708D5663B /* ThinkPadTabletEnabler.kext */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>ThinkPadTabletEnabler</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>com.dytara.driver.thinkpadtabletenabler</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>ThinkPadTabletEnabler</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.9</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.9</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>Tablet</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.dytara.driver.thinkpadtabletenabler</string>
+			<key>IOClass</key>
+			<string>com_dytara_driver_thinkpadtabletenabler</string>
+			<key>IOKitDebug</key>
+			<integer>0</integer>
+			<key>IONameMatch</key>
+			<array>
+				<string>WACF004</string>
+				<string>WACF008</string>
+			</array>
+			<key>IOProbeScore</key>
+			<string>20000</string>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOACPIFamily</key>
+		<string>1.0.0d1</string>
+		<key>com.apple.kernel.iokit</key>
+		<string>1.1</string>
+	</dict>
+</dict>
+</plist>
+";
+		};
+/* End PBXBundleTarget section */
+
+/* Begin PBXFileReference section */
+		B9FBA18004601FF708D5663B /* ThinkPadTabletEnabler.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ThinkPadTabletEnabler.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FBA1810460213D08D5663B /* ThinkPadTabletEnabler.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ThinkPadTabletEnabler.cpp; sourceTree = "<group>"; };
+		B9FBA1820460213D08D5663B /* ThinkPadTabletEnabler.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ThinkPadTabletEnabler.h; sourceTree = "<group>"; };
+		F5771AAA025EAE3B02A80102 /* IOKit */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = folder; name = IOKit; path = /System/Library/Frameworks/Kernel.framework/Versions/A/Headers/IOKit; sourceTree = "<absolute>"; };
+		F5771AAB025EAE3B02A80102 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9FBA17D04601FF708D5663B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* ThinkPadTabletEnabler */ = {
+			isa = PBXGroup;
+			children = (
+				247142CAFF3F8F9811CA285C /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+				F5771AAA025EAE3B02A80102 /* IOKit */,
+				F5771AAB025EAE3B02A80102 /* Kernel.framework */,
+			);
+			name = ThinkPadTabletEnabler;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9FBA18004601FF708D5663B /* ThinkPadTabletEnabler.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247142CAFF3F8F9811CA285C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B9FBA1810460213D08D5663B /* ThinkPadTabletEnabler.cpp */,
+				B9FBA1820460213D08D5663B /* ThinkPadTabletEnabler.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B9FBA17A04601FF708D5663B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FBA1840460213D08D5663B /* ThinkPadTabletEnabler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 58F193F40A8D01D70073F8A1 /* Build configuration list for PBXProject "ThinkPadTabletEnabler" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* ThinkPadTabletEnabler */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9FBA17F04601FF708D5663B /* ThinkPadTabletEnabler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9FBA17C04601FF708D5663B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9FBA17904601FF708D5663B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPreprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+		B9FBA17E04601FF708D5663B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPostprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9FBA17B04601FF708D5663B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9FBA1830460213D08D5663B /* ThinkPadTabletEnabler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58F193E70A8D01D70073F8A1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/ThinkPadTabletEnabler.kext/Contents/PlugIns";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.dytara.driver.thinkpadtabletenabler;
+				MODULE_VERSION = 1.9;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ThinkPadTabletEnabler;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		58F193E80A8D01D70073F8A1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/ThinkPadTabletEnabler.kext/Contents/PlugIns";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.dytara.driver.thinkpadtabletenabler;
+				MODULE_VERSION = 1.9;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ThinkPadTabletEnabler;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		58F193E90A8D01D70073F8A1 /* DEBUG */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/ThinkPadTabletEnabler.kext/Contents/PlugIns";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.dytara.driver.thinkpadtabletenabler;
+				MODULE_VERSION = 1.9;
+				OPTIMIZATION_CFLAGS = "-O0 -DDEBUG";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ThinkPadTabletEnabler;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = DEBUG;
+		};
+		58F193EA0A8D01D70073F8A1 /* ASSERT */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/ThinkPadTabletEnabler.kext/Contents/PlugIns";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.dytara.driver.thinkpadtabletenabler;
+				MODULE_VERSION = 1.9;
+				OPTIMIZATION_CFLAGS = "-O0 -DASSERT";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ThinkPadTabletEnabler;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = ASSERT;
+		};
+		58F193EB0A8D01D70073F8A1 /* DEBUG & ASSERT */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/ThinkPadTabletEnabler.kext/Contents/PlugIns";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.dytara.driver.thinkpadtabletenabler;
+				MODULE_VERSION = 1.9;
+				OPTIMIZATION_CFLAGS = "-O0 -DDEBUG -DASSERT";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ThinkPadTabletEnabler;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = "DEBUG & ASSERT";
+		};
+		58F193EC0A8D01D70073F8A1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/ThinkPadTabletEnabler.kext/Contents/PlugIns";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.dytara.driver.thinkpadtabletenabler;
+				MODULE_VERSION = 1.9;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ThinkPadTabletEnabler;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Default;
+		};
+		58F193F50A8D01D70073F8A1 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		58F193F60A8D01D70073F8A1 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		58F193F70A8D01D70073F8A1 /* DEBUG */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = DEBUG;
+		};
+		58F193F80A8D01D70073F8A1 /* ASSERT */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = ASSERT;
+		};
+		58F193F90A8D01D70073F8A1 /* DEBUG & ASSERT */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "DEBUG & ASSERT";
+		};
+		58F193FA0A8D01D70073F8A1 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58F193E60A8D01D70073F8A1 /* Build configuration list for PBXBundleTarget "ThinkPadTabletEnabler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F193E70A8D01D70073F8A1 /* Development */,
+				58F193E80A8D01D70073F8A1 /* Deployment */,
+				58F193E90A8D01D70073F8A1 /* DEBUG */,
+				58F193EA0A8D01D70073F8A1 /* ASSERT */,
+				58F193EB0A8D01D70073F8A1 /* DEBUG & ASSERT */,
+				58F193EC0A8D01D70073F8A1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		58F193F40A8D01D70073F8A1 /* Build configuration list for PBXProject "ThinkPadTabletEnabler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F193F50A8D01D70073F8A1 /* Development */,
+				58F193F60A8D01D70073F8A1 /* Deployment */,
+				58F193F70A8D01D70073F8A1 /* DEBUG */,
+				58F193F80A8D01D70073F8A1 /* ASSERT */,
+				58F193F90A8D01D70073F8A1 /* DEBUG & ASSERT */,
+				58F193FA0A8D01D70073F8A1 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
